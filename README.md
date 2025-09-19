@@ -1,2 +1,3 @@
-# igt-ai
-A framework for runtime ai governance of AI-API consumption. 
+# Igt-ai
+
+A framework for runtime AI governance of AI-API consumption.

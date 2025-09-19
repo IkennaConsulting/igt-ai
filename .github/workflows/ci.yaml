@@ -7,17 +7,26 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install Vale
-        run: |
-          wget -O vale.tar.gz https://github.com/errata-ai/vale/releases/latest/download/vale_Linux_64-bit.tar.gz
-          tar -xzf vale.tar.gz
-          sudo mv vale /usr/local/bin/
-
-      - name: Vale - editorial check of Markdown files
-        run: ./run_vale
+      - name: Vale editorial linting
+        uses: errata-ai/vale-action@v2.1.1
+        with:
+          files: '["igtai", "README.md"]'
+#      - name: Super-linter
+#        uses: super-linter/super-linter@v8.1.0
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          MARKDOWN_CONFIG_FILE: ".markdown-lint.yml"
+      - uses: DavidAnson/markdownlint-cli2-action@v20
+        with:
+          globs: |
+            README.md
+            igtai/*.md
