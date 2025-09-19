@@ -1,8 +1,8 @@
 
-# 1. AI-API Workflow 
+# 1. AI-API workflow 
 
-# 2. Security, Privacy, and Compliance
+# 2. Security, privacy, and compliance
 
-# 3. Cost Optimisation and Performance
+# 3. Cost optimisation and performance
 
-# 4. Developer Experience and Collaboration
+# 4. Developer experience and collaboration
