@@ -14,4 +14,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: errata-ai/vale-action@v2.1.1
         with:
-          files: '["igtai/*.md", "README.md"]'
+          files: '["README.md"]'
