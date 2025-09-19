@@ -20,8 +20,13 @@ jobs:
         uses: errata-ai/vale-action@v2.1.1
         with:
           files: '["igtai", "README.md"]'
-      - name: Super-linter
-        uses: super-linter/super-linter@v8.1.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MARKDOWN_CONFIG_FILE: ".markdown-lint.yml"
+#      - name: Super-linter
+#        uses: super-linter/super-linter@v8.1.0
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          MARKDOWN_CONFIG_FILE: ".markdown-lint.yml"
+      - uses: DavidAnson/markdownlint-cli2-action@v20
+        with:
+          globs: |
+            README.md
+            igtai/*.md
