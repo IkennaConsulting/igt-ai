@@ -9,9 +9,19 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
 
     steps:
       - uses: actions/checkout@v4
-      - uses: errata-ai/vale-action@v2.1.1
+      - name: Vale editorial linting
+        uses: errata-ai/vale-action@v2.1.1
         with:
           files: '["igtai", "README.md"]'
+      - name: Super-linter
+        uses: super-linter/super-linter@v8.1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MARKDOWN_CONFIG_FILE: ".markdown-lint.yml"
