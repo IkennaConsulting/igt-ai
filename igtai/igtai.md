@@ -1,4 +1,4 @@
-# IGT-AI Canvas
+# IGT-AI canvas
 
 ## 1. AI-API workflow
 
