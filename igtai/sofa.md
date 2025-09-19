@@ -4,6 +4,7 @@
 ## SOFA risk model
 
 Consuming AI APIs exposes organisations to the following categories of risks.
+
 - **S**ecurity and privacy risks
 - **O**utput Integrity and reliability risks
 - **F**inancial and operational risks
