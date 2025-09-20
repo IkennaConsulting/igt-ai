@@ -15,7 +15,7 @@ mother's maiden name, or biometric records; and any other information
 that is linked or linkable to an individual, such as medical, educational,
 financial, and employment information."
 
-## Examples of PII data as provided by the NIST publication:
+## Examples of PII data as provided by the NIST publication
 
 "The following list contains examples of information that may be
 considered PII.
