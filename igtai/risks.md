@@ -3,7 +3,7 @@
 
 <!-- vale Microsoft.Headings = NO -->
 ## IGT-AI risk model
-<!-- vale Microsoft.Headings = NO -->
+<!-- vale Microsoft.Headings = YES -->
 
 Consuming AI APIs exposes organisations to the following categories of risks.
 

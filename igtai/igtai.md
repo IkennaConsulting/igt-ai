@@ -18,7 +18,7 @@ A checklist for a basic evaluation of AI gateways for runtime AI governance
 - How does the AI gateway support centralised management for AI provider
   API credentials?
 - How does the AI gateway provide basic internal guardrails for PII detection and
-  regex filters for disallowed keywords and phrases? (List essential PII)
+  regex filters for disallowed keywords and phrases? (See [The IGT-AI PII list](pii.md))
 - How does the AI gateway support integration with external guardrails?
   - If so, how many, and which ones?
   - How easy is it to integrate with external guardrails?
