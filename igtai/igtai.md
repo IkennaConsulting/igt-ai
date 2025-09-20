@@ -26,9 +26,8 @@ the [IGT-AI risks](risks.md).
 - Does it provide an air-gapped deployment option?
   An air-gapped environment is one that's secure and isolated from
   the internet and other external networks,
-<!-- vale Vale.Spelling = NO -->
-  making it resistant to external cyber attacks.
-<!-- vale Vale.Spelling = YES -->
+  making it resistant to external
+  <!-- vale Vale.Spelling = NO -->cyber attacks.<!-- vale Vale.Spelling = YES -->
 - Does it support prompt templating to avoid
   prompt injection attacks, and facilitate versioning of prompt logic?
 
