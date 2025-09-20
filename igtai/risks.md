@@ -15,6 +15,7 @@ Consuming AI APIs exposes organisations to the following categories of risks.
 ### Security and privacy risks
 
 ---
+
 #### Credential leakage
 
 API keys and other credentials used to access AI APIs can be leaked through
@@ -38,6 +39,7 @@ Malicious actors can manipulate prompts sent to AI APIs to produce harmful or
 ### Output Integrity and reliability risks
 
 ---
+
 #### Hallucination
 
 AI models may generate incorrect or fabricated information, which can mislead
@@ -64,6 +66,7 @@ An inference service may become unavailable due to high demand, outages, or
 ### Financial and operational risks
 
 ---
+
 #### Denial of wallet attacks
 
 Attackers can exploit AI APIs by sending a high volume of requests, leading to
@@ -84,6 +87,7 @@ AI APIs can introduce latency into applications, especially if the API
 ### Silo AI risks
 
 ---
+
 #### Drift in policy enforcement
 
 Divergence between intended governance policies for LLM/API traffic and what
