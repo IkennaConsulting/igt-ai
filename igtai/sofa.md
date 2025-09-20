@@ -1,14 +1,18 @@
 
 # Risk models for AI API consumption
 
+<!-- vale Microsoft.Headings = NO -->
 ## SOFA risk model
+<!-- vale Microsoft.Headings = NO -->
 
 Consuming AI APIs exposes organisations to the following categories of risks.
 
 - **S**ecurity and privacy risks
 - **O**utput Integrity and reliability risks
 - **F**inancial and operational risks
+<!-- vale Microsoft.FirstPerson = NO -->
 - Silo **A**I risk
+<!-- vale Microsoft.FirstPerson = NO -->
 
 ### Security and privacy risks
 
@@ -47,7 +51,10 @@ Attackers can send queries that are irrelevant to the business
 #### Toxic, profane, and off-brand content
 
 A model can produce outputs that are biased, offensive, or harmful, damaging the
- organisation's reputation and user trust.
+ organization's reputation and user trust. This includes vulgar, profane, or
+ offensive language, hate speech, gratuitous violence, bullying, sexually
+ explicit content, or any content that's inconsistent with the brand's voice
+ and values.
 
 #### Lack of resilience
 
