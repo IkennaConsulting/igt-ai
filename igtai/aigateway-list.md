@@ -1,4 +1,4 @@
-
+<!-- markdownlint-disable -->
 # AI Gateways
 
 ## List
@@ -60,3 +60,5 @@
 - [Azure AI Model Inference REST API](https://learn.microsoft.com/en-us/rest/api/aifoundry/modelinference/)
 - [Azure AI Content Safety (overview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview)
 - [Pangea Platform](https://pangea.cloud/platform/)
+
+<!-- markdownlint-enable -->
