@@ -2,17 +2,15 @@
 # Risk models for AI API consumption
 
 <!-- vale Microsoft.Headings = NO -->
-## SOFA risk model
+## IGT-AI risk model
 <!-- vale Microsoft.Headings = NO -->
 
 Consuming AI APIs exposes organisations to the following categories of risks.
 
-- **S**ecurity and privacy risks
-- **O**utput Integrity and reliability risks
-- **F**inancial and operational risks
-<!-- vale Microsoft.FirstPerson = NO -->
-- Silo **A**I risk
-<!-- vale Microsoft.FirstPerson = NO -->
+- Security and privacy risks
+- Output integrity and reliability risks
+- Financial and operational risks
+- Silo AI risk
 
 ### Security and privacy risks
 
