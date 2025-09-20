@@ -1,4 +1,8 @@
-# IGT-AI canvas
+# IGT-AI canvas checklist
+
+A checklist for a basic evaluation of AI gateways for runtime AI governance 
+of AI-API consumption. This checklist focuses on using an AI gateway to 
+mitigate the [SOFA risks](sofa.md).
 
 ## 1. AI-API workflow
 
@@ -16,10 +20,8 @@
 - How does the AI gateway provide basic internal guardrails for PII detection and
   regex filters for disallowed keywords and phrases? (List essential PII)
 - How does the AI gateway support integration with external guardrails?
-  - If so, how many, and which
-    ones?
+  - If so, how many, and which ones?
   - How easy is it to integrate with external guardrails?
-- Do the guardrails work for a streaming API?
 - Does it provide an air-gapped deployment option?
 - Does it support prompt templating to avoid
   prompt injection attacks, and facilitate versioning of prompt logic?
@@ -28,8 +30,8 @@
 
 - How does the AI gateway support **token-based** rate limiting?
 - Does the AI gateway provide configurable, token-based cost monitoring?
-  - Does it provide dashboards?
-  - How does it provide alerting?
+  - Does it provide dashboards for cost monitoring?
+  - How does it provide alerting for cost monitoring?
 - Does it provide semantic caching support?
   - For third-party AI service providers, if this is a cloud platform?
 - Does it provide OTel-based observability (logs, metrics, traces)?
