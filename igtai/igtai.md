@@ -2,10 +2,10 @@
 
 ## 1. AI-API workflow
 
+- How easy is it to get started with the AI gateway?
 - Does it support GitOps workflow?
 - If the organisation is a Kubernetes shop, is the AI gateway
   Kubernetes-native?
-- How easy is it to get started?
 - If it's a cloud platform, how easy is it to integrate
   with inference services not on its platform?
 
@@ -33,16 +33,13 @@
 - Does it provide semantic caching support?
   - For third-party AI service providers, if this is a cloud platform?
 - Does it provide OTel-based observability (logs, metrics, traces)?
-- Does it support conditional routing scenarios:
-  - Routing by cost?
-  - Fallback mechanism, for example, if an AI provider is down?
 
 ## 4. Developer experience and collaboration
 
 - Does it provide an out-of-the-box OpenAI compatible API for inference?
 - Does it provide an out-of-the-box SDK for developer integration?
-- How does it support extending the unified API?
 - How does it support abstracting away the model from the calling client?
-- Does it provide an AI model catalogue?
-- Is it open-source or commercial? If open-source, is there an active
-  community around it?
+  (For cases where the team wants to switch between models in the same family,
+   or between model providers, without changing the client)
+- Does it provide an AI model catalogue or inventory so developers can see
+  what models they can access?
