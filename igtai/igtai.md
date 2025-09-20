@@ -6,7 +6,7 @@
 - If the organisation is a Kubernetes shop, is the AI gateway
   Kubernetes-native?
 - How easy is it to get started?
-- If it's a cloud platform, how easy is it to integrate 
+- If it's a cloud platform, how easy is it to integrate
   with inference services not on its platform?
 
 ## 2. Security, privacy, and compliance
@@ -15,9 +15,9 @@
   API credentials?
 - How does the AI gateway provide basic internal guardrails for PII detection and
   regex filters for disallowed keywords and phrases? (List essential PII)
-- How does the AI gateway support integration with external guardrails? 
+- How does the AI gateway support integration with external guardrails?
   - If so, how many, and which
-    ones? 
+    ones?
   - How easy is it to integrate with external guardrails?
 - Do the guardrails work for a streaming API?
 - Does it provide an air-gapped deployment option?
@@ -31,12 +31,11 @@
   - Does it provide dashboards?
   - How does it provide alerting?
 - Does it provide semantic caching support?
-    - For third-party AI service providers, if this is a cloud platform?
+  - For third-party AI service providers, if this is a cloud platform?
 - Does it provide OTel-based observability (logs, metrics, traces)?
 - Does it support conditional routing scenarios:
   - Routing by cost?
   - Fallback mechanism, for example, if an AI provider is down?
-
 
 ## 4. Developer experience and collaboration
 
