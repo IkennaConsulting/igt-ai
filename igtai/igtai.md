@@ -1,8 +1,8 @@
 # IGT-AI canvas checklist
 
-A checklist for a basic evaluation of AI gateways for runtime AI governance 
-of AI-API consumption. This checklist focuses on using an AI gateway to 
-mitigate the [SOFA risks](sofa.md).
+A checklist for a basic evaluation of AI gateways for runtime AI governance
+ of AI-API consumption. This checklist focuses on using an AI gateway to
+ mitigate the [SOFA risks](sofa.md).
 
 ## 1. AI-API workflow
 
