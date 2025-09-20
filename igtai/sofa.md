@@ -77,9 +77,17 @@ AI APIs can introduce latency into applications, especially if the API
 
 #### Drift in policy enforcement
 
+Divergence between intended governance policies for LLM/API traffic and what
+ is being applied at runtime across different paths, environments, or components
+
 #### Fractured audit trails
 
 #### Shadow AI
+
+Shadow AI occurs when employees use AI tools without IT or security team oversight,
+ leading to potential security vulnerabilities and compliance issues. For AI-APIs,
+ this involves integrating with AI model APIs that haven't been vetted or
+ approved by the organization.
 
 ## Other AI consumption risk models
 
