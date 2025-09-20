@@ -1,8 +1,8 @@
 # IGT-AI canvas checklist
 
-A checklist for a basic evaluation of AI gateways for runtime AI governance
- of AI-API consumption. This checklist focuses on using an AI gateway to
- mitigate the [IGT-AI risks](risks.md).
+A checklist for a basic evaluation of AI gateways for runtime AI governance of
+AI-API consumption. This checklist focuses on using an AI gateway to mitigate
+the [IGT-AI risks](risks.md).
 
 ## 1. AI-API workflow
 
@@ -17,8 +17,9 @@ A checklist for a basic evaluation of AI gateways for runtime AI governance
 
 - How does the AI gateway support centralised management for AI provider
   API credentials?
-- How does the AI gateway provide basic internal guardrails for PII detection and
-  regex filters for disallowed keywords and phrases? (List essential PII)
+- How does the AI gateway provide basic internal guardrails for PII detection
+  and regex filters for disallowed keywords and phrases? (See
+  [The IGT-AI PII list](pii.md))
 - How does the AI gateway support integration with external guardrails?
   - If so, how many, and which ones?
   - How easy is it to integrate with external guardrails?
@@ -41,7 +42,7 @@ A checklist for a basic evaluation of AI gateways for runtime AI governance
 - Does it provide an out-of-the-box OpenAI compatible API for inference?
 - Does it provide an out-of-the-box SDK for developer integration?
 - How does it support abstracting away the model from the calling client?
-  (For cases where the team wants to switch between models in the same family,
-   or between model providers, without changing the client)
+  (For cases where the team wants to switch between models in the same
+  family, or between model providers, without changing the client)
 - Does it provide an AI model catalogue or inventory so developers can see
   what models they can access?
