@@ -26,15 +26,14 @@ the [IGT-AI risks](risks.md).
 - Does it provide an air-gapped deployment option?
   An air-gapped environment is one that's secure and isolated from
   the internet and other external networks,
-<!-- vale Vale.Spelling = NO -->
-  making it resistant to external cyber attacks.
-<!-- vale Vale.Spelling = YES -->
+  making it resistant to external
+  <!-- vale Vale.Spelling = NO -->cyber attacks.<!-- vale Vale.Spelling = YES -->
 - Does it support prompt templating to avoid
   prompt injection attacks, and facilitate versioning of prompt logic?
 
 ## 3. Cost optimisation and performance
 
-- How does the AI gateway support **token-based** rate limiting?
+- How does the AI gateway support **token-aware** rate limiting?
 - Does the AI gateway provide configurable, token-based cost monitoring?
   - Does it provide dashboards for cost monitoring?
   - How does it provide alerting for cost monitoring?

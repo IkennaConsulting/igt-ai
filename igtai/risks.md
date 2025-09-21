@@ -8,9 +8,10 @@
 Consuming AI APIs exposes organisations to the following categories of risks.
 
 - Security and privacy risks
-- Output integrity and reliability risks
-- Financial and operational risks
-- Silo AI risk
+- Message integrity  risks
+- Operational and performance risks
+- Financial risks
+- Silo AI and collaboration risks
 
 ### Security and privacy risks
 
@@ -36,7 +37,7 @@ Malicious actors can manipulate prompts sent to AI APIs to produce harmful or
  unintended outputs, leading to misinformation by the model, offensive content,
  or security vulnerabilities.
 
-### Output Integrity and reliability risks
+### Message Integrity  risks
 
 ---
 
@@ -45,25 +46,37 @@ Malicious actors can manipulate prompts sent to AI APIs to produce harmful or
 AI models may generate incorrect or fabricated information, which can mislead
  users or result in poor decision-making.
 
-#### Off-topic content
-
-Attackers can send queries that are irrelevant to the business
- or out-of scope of the generative AI application.
-
-#### Toxic, profane, and off-brand content
+#### Toxic, profane, off-topic, and off-brand content
 
 A model can produce outputs that are biased, offensive, or harmful, damaging the
  organization's reputation and user trust. This includes vulgar, profane, or
  offensive language, hate speech, gratuitous violence, bullying, sexually
  explicit content, or any content that's inconsistent with the brand's voice
- and values.
+ and values. Attackers can send queries that are irrelevant to the business
+or out-of scope of the generative AI application.
+
+---
+
+### Operational and performance risks
 
 #### Lack of resilience
 
 An inference service may become unavailable due to high demand, outages, or
  other issues, impacting application functionality.
 
-### Financial and operational risks
+#### High application latency
+
+AI APIs can introduce latency into applications, especially if the API
+provider experiences high demand or outages, impacting user experience. Delays
+between user input and model input can lead to user frustration and reduced
+engagement.
+
+#### Poor observability
+
+Without proper logging, monitoring, and tracing of AI API calls, it can be
+challenging to diagnose issues and understand usage patterns.
+
+### Financial risks
 
 ---
 
@@ -77,23 +90,14 @@ Attackers can exploit AI APIs by sending a high volume of requests, leading to
 Without proper monitoring and controls, the usage of AI APIs can lead to
  significant and unexpected expenses. This risk is also referred to as unbound consumption.
 
-#### High application latency
-
-AI APIs can introduce latency into applications, especially if the API
- provider experiences high demand or outages, impacting user experience. Delays
- between user input and model input can lead to user frustration and reduced
- engagement.
-
-### Silo AI risks
+### Silo AI and collaboration risks
 
 ---
 
-#### Drift in policy enforcement
-
-Divergence between intended governance policies for LLM/API traffic and what
- is being applied at runtime across different paths, environments, or components
-
 #### Fractured audit trails
+
+Unclear who made what configuration changes, when, and why. This can lead to
+accountability issues and challenges in troubleshooting problems.
 
 #### Shadow AI
 
@@ -101,6 +105,12 @@ Shadow AI occurs when employees use AI tools without IT or security team oversig
  leading to potential security vulnerabilities and compliance issues. For AI-APIs,
  this involves integrating with AI model APIs that haven't been vetted or
  approved by the organization.
+
+#### Rework and duplication of effort
+
+Without a centralized approach to AI API consumption, a lack of collaboration
+between API platform teams and LLMOps can lead to duplicated efforts,
+inconsistent implementations.
 
 ## Other AI consumption risk models
 
