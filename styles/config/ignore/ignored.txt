@@ -11,9 +11,6 @@ Traefik's
 OTel
 Grafana
 Treblle
-ecurity
-utput
-inancial
 vectorizer
 Keycloak
 Nvidia's
