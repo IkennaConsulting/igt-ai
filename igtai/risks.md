@@ -8,7 +8,7 @@
 Consuming AI APIs exposes organisations to the following categories of risks.
 
 - Security and privacy risks
-- Message integrity  risks
+- Content risk
 - Operational and performance risks
 - Financial risks
 - Silo AI and collaboration risks
@@ -37,7 +37,7 @@ Malicious actors can manipulate prompts sent to AI APIs to produce harmful or
  unintended outputs, leading to misinformation by the model, offensive content,
  or security vulnerabilities.
 
-### Message Integrity  risks
+### Content risk
 
 ---
 
