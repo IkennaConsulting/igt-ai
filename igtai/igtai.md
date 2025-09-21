@@ -33,7 +33,7 @@ the [IGT-AI risks](risks.md).
 
 ## 3. Cost optimisation and performance
 
-- How does the AI gateway support **token-based** rate limiting?
+- How does the AI gateway support **token-aware** rate limiting?
 - Does the AI gateway provide configurable, token-based cost monitoring?
   - Does it provide dashboards for cost monitoring?
   - How does it provide alerting for cost monitoring?
