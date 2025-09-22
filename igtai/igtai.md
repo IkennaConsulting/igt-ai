@@ -1,53 +1,28 @@
-# IGT-AI canvas checklist
 
-A checklist for a basic evaluation of AI gateways for runtime AI governance of
-AI-API consumption. This checklist focuses on using an AI gateway to mitigate
-the [IGT-AI risks](risks.md).
+# IGT-AI
 
-## 1. AI-API workflow
+IGT-AI is a framework for evaluating runtime AI-API governance. Runtime
+ AI governance is the set of policies, controls, and monitoring mechanisms
+ applied at the point where AI systems are invoked through APIs. That is, while
+ AI-APIs are being consumed in production. It's the governance in operation in
+ real time when an AI model or service is called, rather than only during
+ design or development.
 
-- How easy is it to get started with the AI gateway?
-- Does it support GitOps workflow?
-- If the organisation is a Kubernetes shop, is the AI gateway
-  Kubernetes-native?
-- If it's a cloud platform, how easy is it to integrate
-  with inference services not on its platform?
+AI–APIs are the AI capabilities exposed via APIs, and governance must happen at
+ that API boundary. Runtime governance focuses on what happens during live
+ interactions with AI models (inference requests, responses, usage patterns).
+ APIs are the ideal control point for enforcing runtime governance policies as
+ every AI request/response passes through the API layer.
 
-## 2. Security, privacy, and compliance
+The risks mitigated by the IGT-AI framework are detailed in the
+ [IGT-AI risks document](risks.md).
 
-- How does the AI gateway support centralised management for AI provider
-  API credentials?
-- How does the AI gateway provide basic internal guardrails for PII detection
-  and regex filters for disallowed keywords and phrases? (See
-  [The IGT-AI PII list](pii.md))
-- How does the AI gateway support integration with external guardrails?
-  - If so, how many, and which ones?
-  - How easy is it to integrate with external guardrails?
-- Does it provide an air-gapped deployment option?
-  An air-gapped environment is one that's secure and isolated from
-  the internet and other external networks,
-  making it resistant to external
-  <!-- vale Vale.Spelling = NO -->cyber attacks.<!-- vale Vale.Spelling = YES -->
-- Does it support prompt templating to avoid
-  prompt injection attacks, and facilitate versioning of prompt logic?
+## Example
 
-## 3. Cost optimisation and performance
+Imagine an enterprise application that uses an LLM for customer support.
+ At runtime, the AI–API governance layer could:
 
-- How does the AI gateway support **token-aware** rate limiting?
-- Does the AI gateway provide configurable, token-based cost monitoring?
-  - Does it provide dashboards for cost monitoring?
-  - How does it provide alerting for cost monitoring?
-- Does it provide semantic caching support?
-  - For third-party AI service providers, if this is a cloud platform?
-- Does it provide OTel-based observability (logs, metrics, traces)?
-
-## 4. Developer experience and collaboration
-
-- Does it provide an out-of-the-box OpenAI-compatible API for inference?
-  - OpenAI API is now the de facto standard for AI model inference APIs.
-- Does it provide an out-of-the-box SDK for developer integration?
-- How does it support abstracting away the model from the calling client?
-  (For cases where the team wants to switch between models in the same
-  family, or between model providers, without changing the client)
-- Does it provide an AI model catalogue or inventory so developers can see
-  what models they can access?
+- Block prompts containing confidential customer account data.
+- Ensure answers don’t include unverified financial advice.
+- Add a mandatory disclaimer automatically.
+- Log the interaction securely for compliance review.

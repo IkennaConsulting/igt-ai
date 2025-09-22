@@ -1,4 +1,5 @@
 <!-- markdownlint-disable -->
+<!-- vale off -->
 # AI Gateways
 
 ## List
@@ -61,4 +62,5 @@
 - [Azure AI Content Safety (overview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview)
 - [Pangea Platform](https://pangea.cloud/platform/)
 
+<!-- vale on -->
 <!-- markdownlint-enable -->
