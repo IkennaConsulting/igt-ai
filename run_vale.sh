@@ -1,3 +1,3 @@
-markdownlint-cli2 igtai/igtai.md igtai/risks.md igtai/pii.md
+markdownlint-cli2 igtai/
 
-vale igtai/igtai.md igtai/risks.md igtai/pii.md
+vale igtai/
