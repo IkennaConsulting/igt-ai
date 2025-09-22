@@ -32,7 +32,7 @@
 ## Pattern template
 
 We use the following template for describing each pattern.
-- 
+
 - **Name** of the pattern
 - **The problem**: A description of the problem or design issue the pattern
  addresses.

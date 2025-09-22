@@ -11,7 +11,6 @@ Consuming AI APIs exposes organisations to the following categories of risks.
 - Content risk
 - Operational and performance risks
 - Financial risks
-- Silo AI and collaboration risks
 
 ### Security and privacy risks
 
@@ -77,6 +76,11 @@ engagement.
 Without proper logging, monitoring, and tracing of AI API calls, it can be
 challenging to diagnose issues and understand usage patterns.
 
+#### Fractured audit trails
+
+Unclear who made what configuration changes, when, and why. This can lead to
+accountability issues and challenges in troubleshooting problems.
+
 ### Financial risks
 
 ---
@@ -91,27 +95,7 @@ Attackers can exploit AI APIs by sending a high volume of requests, leading to
 Without proper monitoring and controls, the usage of AI APIs can lead to
  significant and unexpected expenses. This risk is also referred to as unbound consumption.
 
-### Silo AI and collaboration risks
-
 ---
-
-#### Fractured audit trails
-
-Unclear who made what configuration changes, when, and why. This can lead to
-accountability issues and challenges in troubleshooting problems.
-
-#### Shadow AI
-
-Shadow AI occurs when employees use AI tools without IT or security team oversight,
- leading to potential security vulnerabilities and compliance issues. For AI-APIs,
- this involves integrating with AI model APIs that haven't been vetted or
- approved by the organization.
-
-#### Rework and duplication of effort
-
-Without a centralized approach to AI API consumption, a lack of collaboration
-between API platform teams and LLMOps can lead to duplicated efforts,
-inconsistent implementations.
 
 ## Other AI consumption risk models
 
