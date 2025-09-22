@@ -7,16 +7,16 @@
 Minimal definition: A reverse proxy that serves as the central entry and control
  point for all AI-API requests. 
 
-### Should have features
+### Should have AI gateway features
 - Token-based rate limiting
 - Input and output content moderation (guardrails)
 - Semantic caching
 - Centralised credential management 
 
-### Nice to have features
+### Nice to have AI gateway features
 - Prompt templating
 - AI model catalogue
-TBC
+- Others TBC
 
 ## List of AI gateways
 
