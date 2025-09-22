@@ -1,6 +1,6 @@
 # IGT-AI
 
-A risk-based framework for runtime AI governance of AI-API consumption.
+A risk-based framework for AI-API runtime governance and integration.
 
 - [What's IGT-AI?](igtai/igtai.md)
 - [What risks does it mitigate?](igtai/risks.md)

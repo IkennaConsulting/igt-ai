@@ -1,16 +1,16 @@
 
 # Token aware rate limiting
 
-# The problem
+## The problem
 
-# Forces
+## Forces
 
-# Risk the pattern mitigates 
+## Risk the pattern mitigates 
 
-# How it works
+## How it works
 
-# Solution checklist links
+## Solution checklist links
 
-# Contraindications
+## Contraindications
 
-# References
+## References

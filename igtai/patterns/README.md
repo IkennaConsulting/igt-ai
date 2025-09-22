@@ -2,6 +2,7 @@
 # IGT-AI control patterns
 
 ## The patterns
+
 ### Security, privacy, compliance
 
 - Centralised credential management for inference services
