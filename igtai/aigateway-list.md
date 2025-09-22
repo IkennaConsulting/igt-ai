@@ -2,7 +2,23 @@
 <!-- vale off -->
 # AI Gateways
 
-## List
+## Definition of AI gateway
+
+Minimal definition: A reverse proxy that serves as the central entry and control
+ point for all AI-API requests. 
+
+### Should have features
+- Token-based rate limiting
+- Input and output content moderation (guardrails)
+- Semantic caching
+- Centralised credential management 
+
+### Nice to have features
+- Prompt templating
+- AI model catalogue
+TBC
+
+## List of AI gateways
 
 | #  | Name                           | Open/Closed Source & Stars | Comment                                          |
 | --- | ------------------------------ | --------------------------- | ------------------------------------------------ |
