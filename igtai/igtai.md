@@ -43,7 +43,8 @@ the [IGT-AI risks](risks.md).
 
 ## 4. Developer experience and collaboration
 
-- Does it provide an out-of-the-box OpenAI compatible API for inference?
+- Does it provide an out-of-the-box OpenAI-compatible API for inference?
+  - OpenAI API is now the de facto standard for AI model inference APIs.
 - Does it provide an out-of-the-box SDK for developer integration?
 - How does it support abstracting away the model from the calling client?
   (For cases where the team wants to switch between models in the same

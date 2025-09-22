@@ -47,13 +47,13 @@ AI models may generate incorrect or fabricated information, which can mislead
  users or result in poor decision-making.
 
 #### Toxic, profane, off-topic, and off-brand content
-
+Attackers can send queries that are irrelevant to the business
+ or out-of scope of the generative AI application.
 A model can produce outputs that are biased, offensive, or harmful, damaging the
  organization's reputation and user trust. This includes vulgar, profane, or
  offensive language, hate speech, gratuitous violence, bullying, sexually
  explicit content, or any content that's inconsistent with the brand's voice
- and values. Attackers can send queries that are irrelevant to the business
-or out-of scope of the generative AI application.
+ and values. 
 
 ---
 
