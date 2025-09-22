@@ -5,7 +5,9 @@ A risk-based framework for evaluating runtime AI-API governance and integration 
 [IGT-AI risks document](risks.md).
 
 ## What runtime AI-API governance means
-Runtime AI-API governance is the set of policies, controls, and monitoring mechanisms
+
+Runtime AI-API governance is the set of policies, controls,
+ and monitoring mechanisms
  applied at the point where AI systems are invoked through APIs. That is, while
  AI-APIs are being consumed in production. It's the governance in operation in
  real time when an AI model or service is called, rather than only during
@@ -19,12 +21,11 @@ AI–APIs are the AI capabilities exposed via APIs, and governance must happen a
 
 ## What integration efficiency means
 
-Integration efficiency is about reducing friction, complexity, 
+Integration efficiency is about reducing friction, complexity,
  and time taken to integrate AI-APIs into
  applications while ensuring governance policies are effectively enforced.
 It is also reducing the friction and time it takes to integrate the governance
- mechanisms themselves with other systems. 
-
+ mechanisms themselves with other systems.
 
 ## Example
 
