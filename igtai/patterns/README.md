@@ -3,32 +3,39 @@
 
 ## The patterns
 
-### Security, privacy, compliance
+Patterns are marked as Must-Have (MH), Should-Have (SH), or Nice-to-Have (NH) based on their criticality for AI API governance.
 
-- Centralised credential management for inference services
-- Secure, unified API for inference service access
-- Input moderation
-- Output moderation
-- Prompt templating
+### Security, privacy & compliance
 
-### Cost optimisation and performance
+- Centralized credential management (MH)
+- PII detection and redaction (MH)
+- Input & output guardrails (MH)
+- Prompt templating and injection prevention (SH)
 
-- [Token-aware rate limiting](token-aware-rate-limiting.md)
-- Budgets
-- Semantic caching
-- Policy-based multimodel routing and failover
-- Generative AI observability
+### Cost governance & optimization
 
-### Developer experience and collaboration
+- [Token-aware rate limiting and budgets](token-aware-rate-limiting.md) (MH)
+- Semantic caching (SH)
+- Dynamic model selection (SH)
 
-- AI-model catalogue
-- AI API docs
-- SDKs
+### Reliability & orchestration
 
-### Deployment and workflow
+- Provider-agnostic API abstraction (MH)
+- Multi-model routing and failover (MH)
+- Streaming response management (SH)
+- Context window management (SH)
 
-- GitOps workflow
-- Policy-as-Code
+### Observability & governance
+
+- Audit trails and compliance logging (MH)
+- Model performance monitoring (SH)
+- Hallucination detection (NH)
+
+### Developer experience
+
+- AI model catalog (NH)
+- Response validation and transformation (SH)
+- AI model playground (NH)
 
 ## Pattern template
 
