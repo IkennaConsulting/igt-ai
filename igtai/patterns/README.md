@@ -3,39 +3,36 @@
 
 ## The patterns
 
-Patterns are marked as Must-Have (MH), Should-Have (SH), or Nice-to-Have (NH) based on their criticality for AI API governance.
-
 ### Security, privacy & compliance
 
-- Centralized credential management (MH)
-- PII detection and redaction (MH)
-- Input & output guardrails (MH)
-- Prompt templating and injection prevention (SH)
+- Centralized credential management
+- Input & output guardrails
+- Prompt templating
 
-### Cost governance & optimization
+### Cost management & optimization
 
-- [Token-aware rate limiting and budgets](token-aware-rate-limiting.md) (MH)
-- Semantic caching (SH)
-- Dynamic model selection (SH)
+- [Token-aware rate limiting and budgets](token-aware-rate-limiting.md)
+- Semantic caching
+- Dynamic model selection
 
 ### Reliability & orchestration
 
-- Provider-agnostic API abstraction (MH)
-- Multi-model routing and failover (MH)
-- Streaming response management (SH)
-- Context window management (SH)
+- Provider-agnostic API abstraction
+- Multi-model routing and failover
+- Streaming response management
+- Context window management
 
 ### Observability & governance
 
-- Audit trails and compliance logging (MH)
-- Model performance monitoring (SH)
-- Hallucination detection (NH)
+- Audit trails and compliance logging
+- Model performance monitoring
+- Distributed tracing
 
 ### Developer experience
 
-- AI model catalog (NH)
-- Response validation and transformation (SH)
-- AI model playground (NH)
+- AI model catalog and playground
+- Response validation and transformation
+- Docs and SDKs
 
 ## Pattern template
 
