@@ -3,32 +3,36 @@
 
 ## The patterns
 
-### Security, privacy, compliance
+### Security, privacy & compliance
 
-- Centralised credential management for inference services
-- Secure, unified API for inference service access
-- Input moderation
-- Output moderation
-- Prompt templating
+- [Centralized credential management](centralized-credential-management.md)
+- [Input & output guardrails](input-output-guardrails.md)
+- [Prompt templating](prompt-templating.md)
 
-### Cost optimisation and performance
+### Cost management & optimization
 
-- [Token-aware rate limiting](token-aware-rate-limiting.md)
-- Budgets
-- Semantic caching
-- Policy-based multimodel routing and failover
-- Generative AI observability
+- [Token-aware rate limiting and budgets](token-aware-rate-limiting.md)
+- [Semantic caching](semantic-caching.md)
+- [Dynamic model selection](dynamic-model-selection.md)
 
-### Developer experience and collaboration
+### Reliability & orchestration
 
-- AI-model catalogue
-- AI API docs
-- SDKs
+- [Provider-agnostic API abstraction](provider-agnostic-api-abstraction.md)
+- [Multi-model routing and failover](multi-model-routing-failover.md)
+- [Streaming response management](streaming-response-management.md)
+- [Context window management](context-window-management.md)
 
-### Deployment and workflow
+### Observability & governance
 
-- GitOps workflow
-- Policy-as-Code
+- [Audit trails and compliance logging](audit-trails-compliance-logging.md)
+- [Model performance monitoring](model-performance-monitoring.md)
+- [Distributed tracing](distributed-tracing.md)
+
+### Developer experience
+
+- [AI model catalog and playground](ai-model-catalog-playground.md)
+- [Response validation and transformation](response-validation-transformation.md)
+- [Docs and SDKs](docs-sdks.md)
 
 ## Pattern template
 
@@ -44,8 +48,6 @@ We use the following template for describing each pattern.
 - **How the solution(s) work**: An answer to the problem, describing how the
  solution works and any solution variants that exist. Includes any illustrative
  diagrams.
-- **Solution checklist links**: A link to an AI-gateway checklist or any other 
- implementation solution checklist in the ch
 - **Contraindications**: When not to use the pattern.
 - **References**: Links to relevant resources describing the pattern.
 
