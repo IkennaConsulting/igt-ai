@@ -59,7 +59,7 @@ mechanisms themselves with other systems.
 
 - [AI model catalog and playground](igtai/patterns/ai-model-catalog-playground.md)
 - [Response validation and transformation](igtai/patterns/response-validation-transformation.md)
-- [Docs and SDKs](igtai/patterns/docs-sdks.md)
+
 
 ## Checklists
 - [See the checklist for evaluating AI gateways](igtai/checklists/checklist.md) 
