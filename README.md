@@ -1,9 +1,10 @@
 # IGT-AI
 
-# IGT-AI
 
-A risk-based framework for evaluating runtime AI-API governance and integration efficiency. The risks mitigated by the IGT-AI framework are detailed in the
-[IGT-AI risks document](risks.md).
+A risk-based framework for evaluating runtime AI-API governance and integration efficiency.
+It is a collection of feature patterns and checklists for evaluating AI gateways. 
+The risks mitigated by the IGT-AI patterns are detailed in the
+[IGT-AI risks document](igtai/risks.md).
 
 ## What runtime AI-API governance means
 
@@ -28,12 +29,7 @@ applications while ensuring governance policies are effectively enforced.
 It is also reducing the friction and time it takes to integrate the governance
 mechanisms themselves with other systems.
 
-## What risks does it mitigate?  
-[See the risks section](igtai/risks.md)
-
-# IGT-AI control patterns
-
-## The patterns
+## IGT-AI control patterns
 
 ### Security, privacy & compliance
 
