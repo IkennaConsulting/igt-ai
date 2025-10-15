@@ -33,34 +33,34 @@ mechanisms themselves with other systems.
 
 ### Security, privacy & compliance
 
-- [Centralized credential management](centralized-credential-management.md)
-- [Input & output guardrails](input-output-guardrails.md)
-- [Prompt templating](prompt-templating.md)
+- [Centralized credential management](igtai/patterns/centralized-credential-management.md)
+- [Input & output guardrails](igtai/patterns/input-output-guardrails.md)
+- [Prompt templating](igtai/patterns/prompt-templating.md)
 
 ### Cost management & optimization
 
-- [Token-aware rate limiting and budgets](token-aware-rate-limiting.md)
-- [Semantic caching](semantic-caching.md)
-- [Dynamic model selection](dynamic-model-selection.md)
+- [Token-aware rate limiting and budgets](igtai/patterns/token-aware-rate-limiting.md)
+- [Semantic caching](igtai/patterns/semantic-caching.md)
+- [Dynamic model selection](igtai/patterns/dynamic-model-selection.md)
 
 ### Reliability & orchestration
 
-- [Provider-agnostic API abstraction](provider-agnostic-api-abstraction.md)
-- [Multi-model routing and failover](multi-model-routing-failover.md)
-- [Streaming response management](streaming-response-management.md)
-- [Context window management](context-window-management.md)
+- [Provider-agnostic API abstraction](igtai/patterns/provider-agnostic-api-abstraction.md)
+- [Multi-model routing and failover](igtai/patterns/multi-model-routing-failover.md)
+- [Streaming response management](igtai/patterns/streaming-response-management.md)
+- [Context window management](igtai/patterns/context-window-management.md)
 
 ### Observability & governance
 
-- [Audit trails and compliance logging](audit-trails-compliance-logging.md)
-- [Model performance monitoring](model-performance-monitoring.md)
-- [Distributed tracing](distributed-tracing.md)
+- [Audit trails and compliance logging](igtai/patterns/audit-trails-compliance-logging.md)
+- [Model performance monitoring](igtai/patterns/model-performance-monitoring.md)
+- [Distributed tracing](igtai/patterns/distributed-tracing.md)
 
 ### Developer experience
 
-- [AI model catalog and playground](ai-model-catalog-playground.md)
-- [Response validation and transformation](response-validation-transformation.md)
-- [Docs and SDKs](docs-sdks.md)
+- [AI model catalog and playground](igtai/patterns/ai-model-catalog-playground.md)
+- [Response validation and transformation](igtai/patterns/response-validation-transformation.md)
+- [Docs and SDKs](igtai/patterns/docs-sdks.md)
 
 ## Checklists
 - [See the checklist for evaluating AI gateways](igtai/checklists/checklist.md) 
