@@ -2,7 +2,7 @@
 
 
 A risk-based framework for evaluating runtime AI-API governance and integration efficiency.
-It is a collection of feature patterns and checklists for evaluating AI gateways. 
+It is a collection of feature patterns and checklists for evaluating [AI gateways](igtai/ai-gateway-definition.md). 
 The risks mitigated by the IGT-AI patterns are detailed in the
 [IGT-AI risks document](igtai/risks.md).
 
@@ -48,9 +48,8 @@ mechanisms themselves with other systems.
 - [Provider-agnostic API abstraction](igtai/patterns/provider-agnostic-api-abstraction.md)
 - [Multi-model routing and failover](igtai/patterns/multi-model-routing-failover.md)
 - [Streaming response management](igtai/patterns/streaming-response-management.md)
-- [Context window management](igtai/patterns/context-window-management.md)
 
-### Observability & governance
+### Observability 
 
 - [Audit trails and compliance logging](igtai/patterns/audit-trails-compliance-logging.md)
 - [Model performance monitoring](igtai/patterns/model-performance-monitoring.md)
