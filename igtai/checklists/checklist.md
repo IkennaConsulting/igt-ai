@@ -2,7 +2,7 @@
 
 A checklist for a basic evaluation of AI gateways for runtime AI governance of
 AI-API consumption. This checklist focuses on using an AI gateway to mitigate
-the [IGT-AI risks](risks.md).
+the [IGT-AI risks](../risks.md).
 
 ## 1. AI-API workflow
 
@@ -19,7 +19,7 @@ the [IGT-AI risks](risks.md).
   API credentials?
 - How does the AI gateway provide basic internal guardrails for PII detection
   and regex filters for disallowed keywords and phrases? (See
-  [The IGT-AI PII list](pii.md))
+  [The IGT-AI PII list](../pii.md))
 - How does the AI gateway support integration with external guardrails?
   - If so, how many, and which ones?
   - How easy is it to integrate with external guardrails?
