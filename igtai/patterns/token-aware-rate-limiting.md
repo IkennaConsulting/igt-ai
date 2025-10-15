@@ -15,17 +15,11 @@ Without token-aware controls, organizations experience **denial-of-wallet attack
 
 Several competing concerns make token-aware rate limiting challenging to implement effectively:
 
-**Token counting complexity**: Accurate token counting requires model-specific tokenizers since different models (GPT-4, Claude, Llama) tokenize identical text differently. The text "Hello, world!" might be 4 tokens in one model and 3 in another. Organizations must maintain multiple tokenizers, keep them synchronized with provider updates, and apply the correct tokenizer based on which model will process each request. This complexity multiplies when supporting dozens of models across multiple providers.
-
-**Input and output token asymmetry**: AI costs typically charge different rates for input tokens (prompt) and output tokens (generated response). Input tokens might cost $0.01 per 1,000 tokens while output tokens cost $0.03 per 1,000 tokens—a 3x difference. Rate limiting must account for both, but output token counts are unknown until after generation completes. This creates a chicken-and-egg problem: the system cannot accurately enforce output token limits without generating the response first, but generating a response that exceeds limits wastes resources.
-
 **Streaming response challenges**: When models stream responses token-by-token, output token counts accumulate gradually rather than being known upfront. A streaming request might be within limits for the first 1,000 output tokens but exceed quotas at token 1,001. The gateway must decide whether to terminate mid-stream (disrupting user experience) or allow completion (violating limits). Neither choice is ideal, requiring organizations to balance strict enforcement against user satisfaction.
 
 **Multi-dimensional quota management**: Organizations need quotas at multiple scopes—per user, per application, per team, per project, per model, and organization-wide. A single request might count against five different quota buckets simultaneously. The gateway must track and enforce all applicable limits, failing requests when any quota is exceeded. Managing these overlapping quotas without race conditions or double-counting requires sophisticated state management and coordination.
 
 **Time window complexity**: Token consumption patterns are spiky and irregular. Unlike request-based limits that naturally smooth out over time windows, token usage can exhibit extreme variance—a quiet hour followed by several expensive document processing requests. Organizations need flexible time window definitions (per second, per minute, per hour, per day, per month) with different limits at each tier. A user might have 1,000 tokens per second, 100,000 per hour, and 5 million per month, requiring simultaneous enforcement across all windows.
-
-**Cost vs. fairness trade-offs**: Simple token budgets disadvantage users working on legitimately complex tasks. A researcher analyzing long scientific papers naturally consumes more tokens than someone asking simple factual questions. Pure token-based limits penalize complex legitimate work, while unlimited access enables abuse. Organizations must balance fairness (allowing necessary token consumption) with cost control (preventing abuse and runaway spending).
 
 **Budget enforcement timing**: Organizations typically operate on monthly billing cycles with fixed budgets, but token consumption happens continuously in real-time. The gateway must track cumulative monthly consumption across potentially millions of requests while maintaining accurate counts that align with provider billing. Achieving consistency between gateway-measured consumption and provider-reported usage requires careful token counting, provider reconciliation, and handling of edge cases like partial responses or failed requests.
 
@@ -166,12 +160,6 @@ Implementation guidance for token-aware rate limiting can be found in:
 - **[Token-aware rate limiting implementation checklist](../checklists/token-aware-rate-limiting.md)**: Detailed evaluation criteria for assessing AI gateway token limiting capabilities
 
 Organizations implementing token-aware rate limiting should consider:
-
-**Tokenizer management**:
-- Deploy tokenizers for all supported models (OpenAI tiktoken, Anthropic, Cohere, HuggingFace)
-- Keep tokenizers synchronized with provider updates
-- Implement fallback tokenizers for unsupported models
-- Cache tokenization results for repeated prompts
 
 **Quota configuration**:
 - Define per-user, per-application, per-team, and organization-wide token budgets
