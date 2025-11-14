@@ -49,9 +49,12 @@ Additionally, this pattern provides partial mitigation for:
 
 **[Hallucination](../risks.md#hallucination)**: Output guardrails can detect low-confidence responses, verify citations against source documents, and flag inconsistent or ungrounded claims, reducing the risk of users receiving fabricated information.
 
+## Definition
+Guardrails are rule-based controls that enforce safety, security, and compliance policies on interactons between users and AI models [1, . 
+
 ## How it works
 
-Input and output guardrails operate as complementary control layers that analyze natural language semantics at the AI gateway boundary. The gateway intercepts all traffic between applications and AI providers, applying sophisticated analysis before requests reach models (input controls) and before responses reach users (output controls).
+Guardrails operate as complementary control layers that analyze natural language semantics at the AI gateway boundary. The gateway intercepts all traffic between applications and AI providers, applying sophisticated analysis before requests reach models (input controls) and before responses reach users (output controls). Guardrails in AI gatewways enable the provision of consistent moderation across different AI models and providers. 
 
 ### Input controls: Protecting what goes into models
 
@@ -257,6 +260,10 @@ In these cases, organizations should:
 - Establish exception processes for trusted users or supervised contexts
 
 ## References
+
+[1]  B. Subramaniam and M. Fowler, “Emerging Patterns in Building GenAI Products.” Martin Fowler. https://martinfowler.com/articles/gen-ai-patterns/#guardrails (Accessed: Nov. 14, 2025).
+[2] D. Shukla, “What are AI Guardrails?” TrueFoundry. https://www.truefoundry.com/blog/ai-guardrails (Accessed: Nov. 14, 2025).
+
 
 **Prompt injection research and defenses**:
 
