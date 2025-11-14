@@ -50,19 +50,17 @@ Additionally, this pattern provides partial mitigation for:
 **[Hallucination](../risks.md#hallucination)**: Output guardrails can detect low-confidence responses, verify citations against source documents, and flag inconsistent or ungrounded claims, reducing the risk of users receiving fabricated information.
 
 ## Definition
-Guardrails are rule-based controls that enforce safety, security, and compliance policies on interactons between users and AI models [1, . 
+Guardrails are rule-based controls that enforce safety, security, and compliance policies on interactions between users and AI models[1, 2]. 
 
 ## How it works
 
-Guardrails operate as complementary control layers that analyze natural language semantics at the AI gateway boundary. The gateway intercepts all traffic between applications and AI providers, applying sophisticated analysis before requests reach models (input controls) and before responses reach users (output controls). Guardrails in AI gatewways enable the provision of consistent moderation across different AI models and providers. 
+Guardrails operate as complementary control layers that analyze natural language semantics at the AI gateway boundary. The gateway intercepts all traffic between applications and AI providers, applying sophisticated analysis before requests reach models (input controls) and before responses reach users (output controls). Guardrails in AI gateways enable the provision of consistent moderation across different AI models and providers. 
 
 ### Input controls: Protecting what goes into models
 
 Input guardrails analyze prompts before forwarding them to AI providers, implementing multiple layers of protection:
 
 **Prompt injection prevention** detects malicious instructions attempting to manipulate model behavior. The gateway employs several techniques:
-
-- **Instruction-data separation**: System prompts and user input are transmitted in separate, clearly delineated channels. Modern AI APIs support structured formats where user content cannot be confused with system instructions. The gateway enforces this separation, preventing users from injecting instructions into data fields.
 
 - **Delimiter enforcement**: When APIs require concatenated prompts, the gateway uses strong delimiters (special tokens, XML tags, or unique markers) to separate system instructions from user content. It validates that user input does not contain these delimiters.
 
