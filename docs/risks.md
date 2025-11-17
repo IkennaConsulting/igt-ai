@@ -8,6 +8,10 @@ Consuming AI APIs exposes organisations to the following categories of risks.
 - Operational and performance risks
 - Financial risks
 
+The different risks the IGT model covers within these categories are illustrated below.
+
+![IGT-AI risk model](./img/igt-ai-risk-model.png)
+
 ### Security and privacy risks
 
 ---
@@ -72,7 +76,7 @@ engagement.
 Without proper logging, monitoring, and tracing of AI API calls, it can be
 challenging to diagnose issues and understand usage patterns.
 
-#### Fractured audit trails
+#### Lack of config audit trails
 
 Unclear who made what configuration changes, when, and why. This can lead to
 accountability issues and challenges in troubleshooting problems.
@@ -88,7 +92,7 @@ unexpected costs and potential service disruptions.
 
 #### Runaway costs
 
-Without proper monitoring and controls, the usage of AI APIs can lead to
+Without proper monitoring and controls, normal usage of AI APIs can lead to
 significant and unexpected expenses. This risk is also referred to as unbound consumption.
 
 ---
