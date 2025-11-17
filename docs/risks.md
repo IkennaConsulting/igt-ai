@@ -25,8 +25,8 @@ to AI services.
 #### Sensitive data disclosure
 
 When sending data to AI APIs, sensitive information may be inadvertently
-included in requests, leading to potential data breaches or compliance
-violations. Examples include Personally Identifiable Information (PII),
+included in requests to the LLM. Also, the LLM can also be tricked by an attacker into disclosing sensitive data, leading to potential data breaches or compliance
+violations. Example of sensitive data includes Personally Identifiable Information (PII),
 Protected Health information (PHI), financial data, or proprietary business
 information.
 
