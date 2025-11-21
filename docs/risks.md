@@ -30,11 +30,13 @@ violations. Example of sensitive data includes Personally Identifiable Informati
 Protected Health information (PHI), financial data, or proprietary business
 information.
 
-#### Prompt injection
+#### Prompt injection and jail breaking
 
 Malicious actors can manipulate prompts sent to AI APIs to produce harmful or
 unintended outputs, leading to misinformation by the model, offensive content,
-or security vulnerabilities.
+or security vulnerabilities. See [types of prompt injection](./prompt-injection.md).
+##### Mitigation
+- [Prompt templates](./prompt-templates.md)
 
 ### Content risk
 
@@ -44,6 +46,8 @@ or security vulnerabilities.
 
 AI models may generate incorrect or fabricated information, which can mislead
 users or result in poor decision-making.
+##### Mitigation
+- [Retrieval-Augmented Generation](./img/rag.png) 
 
 #### Toxic, profane, off-topic, and off-brand content
 
