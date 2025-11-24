@@ -22,6 +22,10 @@ API keys and other credentials used to access AI APIs can be leaked through
 code repositories or logs, allowing unauthorized access
 to AI services.
 
+##### Mitigation
+[AI gateway credential management](./credential-management.md)
+
+
 #### Sensitive data disclosure
 
 When sending data to AI APIs, sensitive information may be inadvertently
@@ -29,6 +33,9 @@ included in requests to the LLM. Also, the LLM can also be tricked by an attacke
 violations. Example of sensitive data includes Personally Identifiable Information (PII),
 Protected Health information (PHI), financial data, or proprietary business
 information.
+##### Mitigation
+- [Regulatory compliance guardrails](./tbd.md)
+
 
 #### Prompt injection and jail breaking
 
@@ -37,6 +44,7 @@ unintended outputs, leading to misinformation by the model, offensive content,
 or security vulnerabilities. See [types of prompt injection](./prompt-injection.md).
 ##### Mitigation
 - [Prompt templates](./prompt-templates.md)
+- [Security guardrails](./tbd.md)
 
 ### Content risk
 
@@ -47,7 +55,7 @@ or security vulnerabilities. See [types of prompt injection](./prompt-injection.
 AI models may generate incorrect or fabricated information, which can mislead
 users or result in poor decision-making.
 ##### Mitigation
-- [Retrieval-Augmented Generation](./img/rag.png) 
+- [Accuracy guardrails ](./tbd.md)
 
 #### Toxic, profane, off-topic, and off-brand content
 
@@ -59,6 +67,9 @@ offensive language, hate speech, gratuitous violence, bullying, sexually
 explicit content, or any content that's inconsistent with the brand's voice
 and values.
 
+##### Mitigation
+- [Content moderation guardrails ](./tbd.md)
+- [Alignment guardrails ](./tbd.md)
 ---
 
 ### Operational and performance risks
@@ -94,10 +105,14 @@ accountability issues and challenges in troubleshooting problems.
 Attackers can exploit AI APIs by sending a high volume of requests, leading to
 unexpected costs and potential service disruptions.
 
+- [Operational guardrails](./tbd.md)
+
 #### Runaway costs
 
 Without proper monitoring and controls, normal usage of AI APIs can lead to
 significant and unexpected expenses. This risk is also referred to as unbound consumption.
+
+- [Operational guardrails](./tbd.md)
 
 ---
 
