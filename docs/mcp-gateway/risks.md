@@ -23,7 +23,6 @@ Attackers can use malicious inputs (directly or via external data) to trick an a
 #### Token theft
 A compromised MCP server can lead to the theft of high-value secrets like OAuth tokens and API keys, granting attackers persistent access to connected services. 
 
-#### Lack of authn / authz
 
 #### Privilege abuse
 A malicious request from a user can trick an MCP server into accessing resources that the user should not have access to, violating security boundaries. 
@@ -49,6 +48,8 @@ No visibility into how MCP servers are being used, making it difficult to detect
 
 
 ### Tool Sprawl Risks
+
+---
 
 #### MCP Server Sprawl
 
