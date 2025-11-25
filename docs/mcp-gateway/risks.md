@@ -33,14 +33,25 @@ A malicious request from a user can trick an MCP server into accessing resources
 ---
 
 #### Tool poisoning and rug pull attacks
+In tool poisoning attacks, an attacker compromises the metadata and descriptions of an MCP tool, embedding hidden malicious instructions. Because the AI agent reads and trusts the information, it can be tricked into executing these hidden instructions, performing unintended actions. 
+
+In a rug pull attack an initially trusted MCP server is later updated with a malicious version, without the host being aware. It can use the trust established earlier to perform harmful actions.
 
 #### Tool shadowing
+Attackers create rogue MCP servers or tools that mimic legitimate ones. The rogue server registers itself with name, metadata, and functionality that mimics a legitimate server. AI agents or users may unknowingly interact with the malicious shadow server, leadign to data interception, credential harvesting, or execution of harmful payloads. 
 
 ### Operational risks
 
 ---
 
+#### Poor observability
+No visibility into how MCP servers are being used, making it difficult to detect misuse, performance issues, or security incidents.
+
 
 ### Tool Sprawl Risks
 
----
+#### MCP Server Sprawl
+
+A proliferation of MCP servers across an organization can lead to management challenges, inconsistent security policies, and increased attack surfaces.
+
+
