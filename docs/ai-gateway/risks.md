@@ -58,7 +58,7 @@ or security vulnerabilities. See [types of prompt injection](prompt-injection.md
 AI models may generate incorrect or fabricated information, which can mislead
 users or result in poor decision-making.
 ##### Mitigation
-- [Accuracy guardrails ](./mitigations/accuracy-guardrails.md)
+- [Accuracy guardrails ](mitigations/accuracy-guardrails.md)
 
 #### Toxic, profane, off-topic, and off-brand content
 
