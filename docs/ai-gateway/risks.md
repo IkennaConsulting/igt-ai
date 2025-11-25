@@ -47,7 +47,7 @@ unintended outputs, leading to misinformation by the model, offensive content,
 or security vulnerabilities. See [types of prompt injection](prompt-injection.md).
 ##### Mitigation
 - [Prompt templates](mitigations/prompt-templates.md)
-- [Security guardrails](mitigation/security-guardrails.md)
+- [Security guardrails](mitigations/security-guardrails.md)
 
 ### Content risk
 
