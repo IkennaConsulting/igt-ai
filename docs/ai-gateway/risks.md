@@ -1,7 +1,7 @@
 
-# IGT-AI risk model
+# IGT-AI AI gateway risk model
 
-Consuming AI APIs exposes organisations to the following categories of risks.
+Consuming AI APIs exposes organizations to the following categories of risks.
 
 - Security and privacy risks
 - Content risk
@@ -10,7 +10,9 @@ Consuming AI APIs exposes organisations to the following categories of risks.
 
 The different risks the IGT model covers within these categories are illustrated below.
 
-![IGT-AI risk model](./img/igt-ai-risk-model.png)
+![IGT-AI risk model](img/ai-gateway-risk-model.png)
+
+In the sections below, for each risk category, I describe the specific risks and risk mitigation mechanisms at the AI gateway layer.
 
 ### Security and privacy risks
 
@@ -23,7 +25,8 @@ code repositories or logs, allowing unauthorized access
 to AI services.
 
 ##### Mitigation
-[AI gateway credential management](./credential-management.md)
+- [AI gateway credential management](mitigations/credential-management.md)
+- [Secrets manager integration](mitigations/secrets-manager-integration.md)
 
 
 #### Sensitive data disclosure
@@ -34,17 +37,17 @@ violations. Example of sensitive data includes Personally Identifiable Informati
 Protected Health information (PHI), financial data, or proprietary business
 information.
 ##### Mitigation
-- [Regulatory compliance guardrails](./tbd.md)
+- [Regulatory compliance guardrails](mitigations/regulatory-compliance-guardrails.md)
 
 
 #### Prompt injection and jail breaking
 
 Malicious actors can manipulate prompts sent to AI APIs to produce harmful or
 unintended outputs, leading to misinformation by the model, offensive content,
-or security vulnerabilities. See [types of prompt injection](./prompt-injection.md).
+or security vulnerabilities. See [types of prompt injection](prompt-injection.md).
 ##### Mitigation
-- [Prompt templates](./prompt-templates.md)
-- [Security guardrails](./tbd.md)
+- [Prompt templates](mitigationsrompt-templates.md)
+- [Security guardrails](mitigationsecurity-guardrails.md)
 
 ### Content risk
 
@@ -55,7 +58,7 @@ or security vulnerabilities. See [types of prompt injection](./prompt-injection.
 AI models may generate incorrect or fabricated information, which can mislead
 users or result in poor decision-making.
 ##### Mitigation
-- [Accuracy guardrails ](./tbd.md)
+- [Accuracy guardrails ](mitigationsccuracy-guardrails.md)
 
 #### Toxic, profane, off-topic, and off-brand content
 
@@ -68,8 +71,8 @@ explicit content, or any content that's inconsistent with the brand's voice
 and values.
 
 ##### Mitigation
-- [Content moderation guardrails ](./tbd.md)
-- [Alignment guardrails ](./tbd.md)
+- [Content moderation guardrails](mitigationsontent-moderation-guardrails.md)
+- [Alignment guardrails](mitigationslignment-guardrails.md)
 ---
 
 ### Operational and performance risks
@@ -77,24 +80,24 @@ and values.
 #### Lack of resilience
 
 An inference service may become unavailable due to high demand, outages, or
-other issues, impacting application functionality.
-
-#### High application latency
-
-AI APIs can introduce latency into applications, especially if the API
+other issues, impacting application functionality. AI APIs can introduce latency into applications, especially if the API
 provider experiences high demand or outages, impacting user experience. Delays
 between user input and model input can lead to user frustration and reduced
 engagement.
+
+##### Mitigation
+- [Fallbacks](mitigationsallbacks.md)
+- [Load balancing](mitigationsoad-balancing.md)
+- [Semantic caching](mitigationsemantic-caching.md)
 
 #### Poor observability
 
 Without proper logging, monitoring, and tracing of AI API calls, it can be
 challenging to diagnose issues and understand usage patterns.
 
-#### Lack of config audit trails
+##### Mitigation
+- [Operational guardrails](mitigationsperational-guardrails.md)
 
-Unclear who made what configuration changes, when, and why. This can lead to
-accountability issues and challenges in troubleshooting problems.
 
 ### Financial risks
 
@@ -105,19 +108,20 @@ accountability issues and challenges in troubleshooting problems.
 Attackers can exploit AI APIs by sending a high volume of requests, leading to
 unexpected costs and potential service disruptions.
 
-- [Operational guardrails](./tbd.md)
+##### Mitigation
+- [Token-based rate limiting](mitigationsoken-based-rate-limiting.md)
+- [Semantic caching](mitigationsemantic-caching.md)
+- [Operational guardrails](mitigationsperational-guardrails.md)
 
 #### Runaway costs
 
 Without proper monitoring and controls, normal usage of AI APIs can lead to
 significant and unexpected expenses. This risk is also referred to as unbound consumption.
 
-- [Operational guardrails](./tbd.md)
+##### Mitigation
+- [Token-based rate limiting](mitigationsoken-based-rate-limiting.md)
+- - [Semantic caching](mitigationsemantic-caching.md)
+- [Operational guardrails](mitigationsperational-guardrails.md)
+
 
 ---
-
-## Other AI consumption risk models
-
-- [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/llm-top-10/)
-- [Google Secure AI Framework](https://saif.google/secure-ai-framework/risks)
-- [FINOS AI Governance Framework](https://air-governance-framework.finos.org/)
