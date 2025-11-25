@@ -2,4 +2,4 @@
 
 IGT-AI is a risk-based framework for evaluating AI gateways.
 
-- [Risk model](./docs/risks.md)
+[See the docs](./docs/README.md)
