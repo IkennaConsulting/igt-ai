@@ -73,9 +73,10 @@ and values.
 ##### Mitigation
 - [Content moderation guardrails](mitigationsontent-moderation-guardrails.md)
 - [Alignment guardrails](mitigationslignment-guardrails.md)
----
 
 ### Operational and performance risks
+
+---
 
 #### Lack of resilience
 
